@@ -1,0 +1,42 @@
+.audio-player {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.rhap_container,
+.rhap_container *:focus {
+  outline: none;
+}
+
+.rhap_container {
+  background-color: transparent;
+  box-shadow: none;
+
+  svg {
+    color: rgb(87, 87, 87);
+    transition: 0.4s;
+  }
+}
+
+.rhap_main-controls {
+  padding: 2rem;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.rhap_button-clear {
+  :hover {
+    color: black;
+  }
+}
+
+.rhap_time {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.rhap_additional-controls,
+.rhap_volume-controls {
+  display: none;
+}
