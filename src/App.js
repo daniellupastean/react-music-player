@@ -3,8 +3,6 @@ import styled from "styled-components";
 import GlobalStyle from "./other/GlobalStyle";
 import SongsLibrary from "./components/SongsLibrary";
 
-// Import Utils
-import data from "./other/utils";
 import MainContainer from "./components/MainContainer";
 
 const StyledApp = styled.div`

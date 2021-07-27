@@ -14,15 +14,27 @@ const songsSlice = createSlice({
   reducers: {
     nextSong(state) {
       if (state.currentSongIndex < state.songs.length - 1) {
+        state.songs[state.currentSongIndex].active = "inactive";
         state.currentSong = state.songs[state.currentSongIndex + 1];
         state.currentSongIndex++;
+        state.songs[state.currentSongIndex].active = "active";
       }
     },
     previousSong(state) {
       if (state.currentSongIndex > 0) {
+        state.songs[state.currentSongIndex].active = "inactive";
         state.currentSong = state.songs[state.currentSongIndex - 1];
         state.currentSongIndex--;
+        state.songs[state.currentSongIndex].active = "active";
       }
+    },
+    changeSong(state, action) {
+      state.songs[state.currentSongIndex].active = "inactive";
+      state.currentSong = state.songs.find((s) => s.id === action.payload);
+      state.currentSongIndex = state.songs.findIndex(
+        (s) => s.id === action.payload
+      );
+      state.songs[state.currentSongIndex].active = "active";
     },
   },
 });

@@ -11,7 +11,7 @@ function ncsMusic() {
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/886/firefly-pt-ii-1609452032-XJzweRIPsK.mp3",
       color: ["#AC6A8E", "#566D53"],
       id: uuidv4(),
-      active: false,
+      active: "active",
     },
     {
       name: "Memory",
@@ -22,7 +22,7 @@ function ncsMusic() {
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/939/memory-1619686835-1chldotSss.mp3",
       color: ["#C3B3BD", "#F87E01"],
       id: uuidv4(),
-      active: false,
+      active: "inactive",
     },
     {
       name: "Heaven",
@@ -32,7 +32,7 @@ function ncsMusic() {
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/573/heaven-1586957132-f9R7o2J2Uv.mp3",
       color: ["#428BCF", "#211E2F"],
       id: uuidv4(),
-      active: false,
+      active: "inactive",
     },
     {
       name: "Courage",
@@ -43,7 +43,7 @@ function ncsMusic() {
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/382/courage-1586951439-gBUCDHDCgj.mp3",
       color: ["#998C72", "#07323F"],
       id: uuidv4(),
-      active: false,
+      active: "inactive",
     },
     {
       name: "Dance With Me",
@@ -54,7 +54,7 @@ function ncsMusic() {
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/862/dance-with-me-1606474872-T7hdXgxeLR.mp3",
       color: ["", ""],
       id: uuidv4(),
-      active: false,
+      active: "inactive",
     },
     {
       name: "Eclipse",
@@ -65,7 +65,7 @@ function ncsMusic() {
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/130/eclipse-1586946808-t73ipJSSMv.mp3",
       color: ["", ""],
       id: uuidv4(),
-      active: false,
+      active: "inactive",
     },
     {
       name: "Prism",
@@ -76,7 +76,7 @@ function ncsMusic() {
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/618/prism-1586958138-Z15yLssLLA.mp3",
       color: ["", ""],
       id: uuidv4(),
-      active: false,
+      active: "inactive",
     },
     {
       name: "Vertigo (Spitfya Remix)",
@@ -87,7 +87,7 @@ function ncsMusic() {
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/542/vertigo-spitfya-remix-1586956056-PjQuHBlia5.mp3",
       color: ["", ""],
       id: uuidv4(),
-      active: false,
+      active: "inactive",
     },
     {
       name: "Summersong 2018",
@@ -98,7 +98,7 @@ function ncsMusic() {
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/501/summersong-2018-1586954985-tCJJsY4Sq5.mp3",
       color: ["", ""],
       id: uuidv4(),
-      active: false,
+      active: "inactive",
     },
   ];
 }
