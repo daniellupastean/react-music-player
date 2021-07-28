@@ -1,13 +1,21 @@
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import { songsActions } from "../store/index";
+import { device } from "../other/device";
 
 const StyledSongsLibrary = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   flex: 0 0 12rem;
   background: #f5f5f5;
+  overflow-y: scroll;
+  height: 100vh;
+
+  h2 {
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+  }
 
   h3 {
     font-size: 1rem;
@@ -19,8 +27,8 @@ const StyledSongsLibrary = styled.div`
 
   .song {
     display: flex;
-    height: 3rem;
-    padding: 0.2rem;
+    height: 3.5rem;
+    padding: 0.5rem;
     transition: background 0.2s ease-in-out;
     cursor: pointer;
 
@@ -42,6 +50,17 @@ const StyledSongsLibrary = styled.div`
     height: 100%;
     pointer-events: none;
   }
+
+  @media ${device.mobileL} {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    h2 {
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  }
 `;
 
 const SongsLibrary = () => {
@@ -49,6 +68,7 @@ const SongsLibrary = () => {
   const dispatch = useDispatch();
   const selectSongHandler = (e) => {
     dispatch(songsActions.changeSong(e.currentTarget.id));
+    if (window.innerWidth <= 768) dispatch(songsActions.toggleLibrary());
   };
 
   const listSongs = songs.map((s) => (
@@ -65,7 +85,12 @@ const SongsLibrary = () => {
       </div>
     </div>
   ));
-  return <StyledSongsLibrary>{listSongs}</StyledSongsLibrary>;
+  return (
+    <StyledSongsLibrary>
+      <h2>Library</h2>
+      {listSongs}
+    </StyledSongsLibrary>
+  );
 };
 
 export default SongsLibrary;

@@ -6,6 +6,7 @@ const initialSongsState = {
   songs: data(),
   currentSong: data()[0],
   currentSongIndex: 0,
+  showLibrary: true,
 };
 
 const songsSlice = createSlice({
@@ -35,6 +36,9 @@ const songsSlice = createSlice({
         (s) => s.id === action.payload
       );
       state.songs[state.currentSongIndex].active = "active";
+    },
+    toggleLibrary(state) {
+      state.showLibrary = !state.showLibrary;
     },
   },
 });

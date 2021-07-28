@@ -12,9 +12,10 @@ import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { songsActions } from "../store";
+import { device } from "../other/device";
 
 const StyledAudioPlayer = styled.div`
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
   .rhap_container,
   .rhap_container *:focus {
@@ -52,6 +53,16 @@ const StyledAudioPlayer = styled.div`
   .rhap_additional-controls,
   .rhap_volume-controls {
     display: none;
+  }
+
+  @media ${device.laptopL} {
+    width: 50%;
+  }
+  @media ${device.laptop} {
+    width: 80%;
+  }
+  @media ${device.mobileL} {
+    width: 100%;
   }
 `;
 

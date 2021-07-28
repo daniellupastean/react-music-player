@@ -100,6 +100,61 @@ function ncsMusic() {
       id: uuidv4(),
       active: "inactive",
     },
+    {
+      name: "Royalty",
+      cover:
+        "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/936/1000x0/royalty-1619082030-xBgqGZWLw9.jpg",
+      artist: "Maestro Chives, Egzod",
+      audio:
+        "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/936/royalty-1619082033-7RC2AlRdd1.mp3",
+      color: ["", ""],
+      id: uuidv4(),
+      active: "inactive",
+    },
+    {
+      name: "Feelings",
+      cover:
+        "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/968/1000x0/feelings-1624636843-jwJFZuXA5i.jpg",
+      artist: "Azertion, Diviners",
+      audio:
+        "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/968/feelings-1624636846-EhVGAuxtSW.mp3",
+      color: ["", ""],
+      id: uuidv4(),
+      active: "inactive",
+    },
+    {
+      name: "Stay Or Be Alone",
+      cover:
+        "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/938/1000x0/stay-or-be-alone-1619528429-k9iZx10k6R.jpg",
+      artist: "QUB3, B0UNC3, Quickdrop",
+      audio:
+        "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/938/stay-or-be-alone-1619528432-tioJY8F4fU.mp3",
+      color: ["", ""],
+      id: uuidv4(),
+      active: "inactive",
+    },
+    {
+      name: "Burn It Down",
+      cover:
+        "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/925/1000x0/burn-it-down-1616763631-2PYDx3HscU.jpg",
+      artist: "Jessica Chertock, Robin Hustin",
+      audio:
+        "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/925/burn-it-down-1616763634-Wvfxm3FhHF.mp3",
+      color: ["", ""],
+      id: uuidv4(),
+      active: "inactive",
+    },
+    {
+      name: "Demons",
+      cover:
+        "https://linkstorage.linkfire.com/medialinks/images/39e90140-e531-4bab-b5bb-d5cb810e9094/artwork-440x440.jpg",
+      artist: "NIVIRO",
+      audio:
+        "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/879/1608310738_Rg7ZA0UnDM_NIVIRO---Demons-NCS-Release.mp3",
+      color: ["", ""],
+      id: uuidv4(),
+      active: "inactive",
+    },
   ];
 }
 
